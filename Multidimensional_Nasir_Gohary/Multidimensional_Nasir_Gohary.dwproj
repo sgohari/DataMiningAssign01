@@ -6,10 +6,113 @@
     <Name>Multidimensional_Nasir_Gohary.database</Name>
     <FullPath>Multidimensional_Nasir_Gohary.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>internet_sales_nasir_gohary.cube</Name>
+      <FullPath>internet_sales_nasir_gohary.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>internet_sales_nasir_gohary.partitions</Name>
+          <FullPath>internet_sales_nasir_gohary.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>finance_nasir_gohary.cube</Name>
+      <FullPath>finance_nasir_gohary.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>finance_nasir_gohary.partitions</Name>
+          <FullPath>finance_nasir_gohary.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Promotion.dim</Name>
+      <FullPath>Promotion.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Date.dim</Name>
+      <FullPath>Date.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sales Territory.dim</Name>
+      <FullPath>Sales Territory.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Customer.dim</Name>
+      <FullPath>Customer.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Currency.dim</Name>
+      <FullPath>Currency.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Product.dim</Name>
+      <FullPath>Product.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Internet Sales Order.dim</Name>
+      <FullPath>Dim Internet Sales Order.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Department Group.dim</Name>
+      <FullPath>Department Group.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Scenario.dim</Name>
+      <FullPath>Scenario.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Date 1.dim</Name>
+      <FullPath>Date 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Organization.dim</Name>
+      <FullPath>Organization.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Account.dim</Name>
+      <FullPath>Account.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>Adventure Works DW2012.ds</Name>
+      <FullPath>Adventure Works DW2012.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>Adventure Works DW2012.dsv</Name>
+      <FullPath>Adventure Works DW2012.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Adventure Works DW2012F Financial.dsv</Name>
+      <FullPath>Adventure Works DW2012F Financial.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Adventure Works DW2012</Id>
+            <Name>Adventure Works DW2012</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=NASIR;Integrated Security=SSPI;Initial Catalog=AdventureWorksDW2012</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Adventure Works DW2012</Id>
+            <Name>Adventure Works DW2012</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>
